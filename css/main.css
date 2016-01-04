@@ -118,6 +118,8 @@ span#sub-title {
 
 img#banner-image {
     width: 100%;
+    min-height: 130px;
+    object-fit: cover;   
 }
 
 
@@ -191,18 +193,18 @@ img#banner-image {
 .people-row-A, .people-row-B, .pi-row {
     display: block;
     width: 100%;
+    float:left;
     height: 128px;
-    line-height: 128px;
-    margin-top: 0px;
-    padding-top: 10px;
+    margin-top: 10px;
+    padding-top: 0px;
     margin-bottom: -1px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     border-top: 1px solid #AAA;
     border-bottom: 1px solid #AAA;
 }
 
 .pi-row {
-    height: 256px;
+    height: 128px;
 }
 
 .people-row-A {
@@ -214,7 +216,7 @@ img#banner-image {
 }
 
 .pi-row h1, .people-row-A h1, .people-row-B h1 {
-    font-size: 24px;
+    font-size: 28px;
     font-family: Hind;
     font-weight: 400;
     color: #555555;
@@ -233,7 +235,7 @@ img#banner-image {
 }
 
 .pi-row h2, .people-row-A h2, .people-row-B h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-family: Hind;
     font-weight: 400;
     color: #555555;
@@ -247,11 +249,27 @@ img#banner-image {
 
 .bio-col {
     display: inline-block;
-    float: left;
-    line-height: normal;
+    line-height: 28px;
     vertical-align: middle;
     text-align: center;
     width: 35%;
+    min-width: 125px;
+    height: 100%;
+    padding-top: 2em;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+.bio-col {
+	float: left;
+	margin-right: 0;
+	width: 50%;
+	height: 50%;
+	border: 0;
+	padding-top: 0.5em;
+	line-height: 20px;
+	font-size: 16px;
+	}
 }
 
 .body-table th {
@@ -262,6 +280,7 @@ img#banner-image {
 	color: #444444;
 	font-size: 20px;
 	line-height: 32px;
+	float: none;
 }
 
 .body-table td {
@@ -269,6 +288,9 @@ img#banner-image {
 	border-bottom: 1px solid #CCC;
 	padding-left: 1em;
 	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	float: none;
 }
 
 #adair {
@@ -362,14 +384,16 @@ img#banner-image {
 	width: 100%;
     height: 64px;
     /*border-bottom: 1px solid #888888;*/
-    line-height: 64px;
+    line-height: 16px;
     margin-top: 20px;
+    padding-top: 10px;
     background: #FFFFFF;
     color: #AAAAAA;
     font-family: Hind;
     font-size: 10px;
     text-align: center;
-    
+	float: left;    
+
     -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
